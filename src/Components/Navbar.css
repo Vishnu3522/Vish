@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:ital,wght@0,500;1,100&family=Rubik+Doodle+Shadow&display=swap');
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 60%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0;
+  }
+}
+
+.nav li {
+  padding: 20px;
+  color: #1e75bb;
+  font-family: 'Kablammo', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease; 
+  }
+
+  &:hover {
+    a {
+      color: aqua;
+    }
+  }
+}
